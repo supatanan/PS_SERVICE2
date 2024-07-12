@@ -1,0 +1,62 @@
+object update_stock_frm: Tupdate_stock_frm
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'update_stock_frm'
+  ClientHeight = 358
+  ClientWidth = 366
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 366
+    Height = 358
+    Align = alClient
+    TabOrder = 0
+    object ProgressBar1: TAdvCircularProgress
+      Left = 32
+      Top = 18
+      Width = 275
+      Height = 264
+      Appearance.BackGroundColor = clNone
+      Appearance.BorderColor = clNone
+      Appearance.ActiveSegmentColor = clFuchsia
+      Appearance.InActiveSegmentColor = clSilver
+      Appearance.TransitionSegmentColor = clLime
+      Appearance.ProgressSegmentColor = 4194432
+      Interval = 100
+    end
+    object bar1: TcxProgressBar
+      Left = 32
+      Top = 301
+      AutoSize = False
+      ParentColor = False
+      Properties.BarStyle = cxbsAnimation
+      Properties.BeginColor = clFuchsia
+      Style.Color = clMenuHighlight
+      Style.LookAndFeel.NativeStyle = True
+      StyleDisabled.LookAndFeel.NativeStyle = True
+      StyleFocused.LookAndFeel.NativeStyle = True
+      StyleHot.LookAndFeel.NativeStyle = True
+      TabOrder = 0
+      Height = 24
+      Width = 275
+    end
+  end
+  object Timer2: TTimer
+    Enabled = False
+    OnTimer = Timer2Timer
+    Left = 298
+    Top = 209
+  end
+end
